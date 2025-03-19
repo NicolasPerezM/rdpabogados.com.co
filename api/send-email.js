@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
     const { firstName, lastName, email, message } = req.body;
     
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend("re_HaGfZ28A_2efxsV3grnc2BH6dnUCB42gf");
 
     try {
         await resend.emails.send({
