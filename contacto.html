@@ -481,16 +481,21 @@ margin: 0rem !important;
         const formData = new FormData(this);
         const formObject = Object.fromEntries(formData.entries());
     
-        const response = await fetch("/api/send-email", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formObject)
-        });
+        try {
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formObject)
+            });
     
-        const result = await response.json();
-        alert(result.message);
+            const result = await response.json();
+            alert(result.message);
+        } catch (error) {
+            console.error("Error al enviar el formulario:", error);
+            alert("Hubo un error al enviar el mensaje.");
+        }
     });
     </script>
 </body>
