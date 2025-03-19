@@ -1,32 +1,22 @@
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
-export default async function (req, res) {
+export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Método no permitido' });
     }
 
-    // 📌 Recibe los datos del formulario
     const { firstName, lastName, email, message } = req.body;
-
-    // 📌 Configuración de Nodemailer
-    const transporter = nodemailer.createTransport({
-        service: 'Gmail', // Puedes usar otro servicio SMTP si lo deseas
-        auth: {
-            user:  "nicolas981112@gmail.com", // Usa variables de entorno para seguridad
-            pass: "nbomE.@121010242768"
-        }
-    });
-
-    // 📌 Configuración del correo
-    const mailOptions = {
-        from: email,
-        to: 'nicolas981112@gmail.com', // Cambia esto por el correo donde recibirás los leads
-        subject: `Nuevo lead de ${firstName} ${lastName}`,
-        text: `Nombre: ${firstName} ${lastName}\nCorreo: ${email}\nMensaje: ${message}`
-    };
+    
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     try {
-        await transporter.sendMail(mailOptions);
+        await resend.emails.send({
+            from: 'nicolas981112@gmail.com', // Debes verificar este dominio en Resend
+            to: 'nicolas981112@gmail.com', // Cambia esto al correo donde recibirás los leads
+            subject: `Nuevo lead de ${firstName} ${lastName}`,
+            text: `Nombre: ${firstName} ${lastName}\nCorreo: ${email}\nMensaje: ${message}`
+        });
+
         return res.status(200).json({ message: 'Correo enviado exitosamente' });
     } catch (error) {
         console.error(error);
