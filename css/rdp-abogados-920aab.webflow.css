@@ -5901,7 +5901,7 @@ figcaption {
 }
 
 .form-block {
-  height: 100%;
+  height: 100em;
   color: var(--base-color-brand--darkest);
 }
 
