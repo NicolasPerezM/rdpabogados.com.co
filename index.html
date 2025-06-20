@@ -416,9 +416,7 @@
                   <div>Thank you! Your submission has been received!</div>
                 </div>
                 <div class="w-form-fail">
-                  <div>
-                    Oops! Something went wrong while submitting the form.
-                  </div>
+                  <div></div>
                 </div>
               </div>
             </div>
@@ -1677,67 +1675,79 @@
     </div>
     <script>
       // Inicializar EmailJS con tu Public Key
-      emailjs.init("tvvaWODG0ZlMgytAP"); // Reemplaza con tu clave pública de EmailJS
+      emailjs.init("tvvaWODG0ZlMgytAP");
 
       document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("wf-form-Contact-4-Form");
+        // Función para manejar el envío de cualquier formulario
+        function handleFormSubmit(form, e) {
+          e.preventDefault(); // Prevenir el envío normal del formulario
 
-        if (form) {
-          form.addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevenir el envío normal del formulario
+          // Obtener los valores del formulario
+          const firstName = document.getElementById(
+            "Contact-4-First-Name"
+          ).value;
+          const lastName = document.getElementById("Contact-4-Last-Name").value;
+          const email = document.getElementById("Contact-4-Email").value;
+          const message = document.getElementById("Contact-2-Message-2").value;
 
-            // Obtener los valores del formulario
-            const firstName = document.getElementById(
-              "Contact-4-First-Name"
-            ).value;
-            const lastName = document.getElementById(
-              "Contact-4-Last-Name"
-            ).value;
-            const email = document.getElementById("Contact-4-Email").value;
-            const message = document.getElementById(
-              "Contact-2-Message-2"
-            ).value;
+          // Parámetros para EmailJS (deben coincidir con tu template)
+          const templateParams = {
+            first_name: firstName,
+            last_name: lastName,
+            email: email,
+            message: message,
+          };
 
-            // Parámetros para EmailJS (deben coincidir con tu template)
-            const templateParams = {
-              first_name: firstName,
-              last_name: lastName,
-              email: email,
-              message: message,
-            };
+          // Mostrar mensaje de carga
+          const submitButton = form.querySelector('input[type="submit"]');
+          const originalText = submitButton.value;
+          submitButton.value = "Enviando...";
+          submitButton.disabled = true;
 
-            // Mostrar mensaje de carga
-            const submitButton = form.querySelector('input[type="submit"]');
-            const originalText = submitButton.value;
-            submitButton.value = "Enviando...";
-            submitButton.disabled = true;
+          // Enviar email con EmailJS
+          emailjs
+            .send("service_izmo82u", "template_qvvresq", templateParams)
+            .then(
+              function (response) {
+                console.log("Email enviado exitosamente:", response);
 
-            // Enviar email con EmailJS
-            emailjs
-              .send("service_izmo82u", "template_qvvresq", templateParams)
-              .then(
-                function (response) {
-                  console.log("Email enviado exitosamente:", response);
+                // Mostrar mensaje de éxito
+                alert(
+                  "¡Mensaje enviado exitosamente! Te contactaremos pronto."
+                );
 
-                  // Mostrar mensaje de éxito
+                // Limpiar formulario
+                form.reset();
+              },
+              function (error) {
+                console.error("Error al enviar email:", error);
 
-                  // Limpiar formulario
-                  form.reset();
-                },
-                function (error) {
-                  console.error("Error al enviar email:", error);
+                // Mostrar mensaje de error
+                alert(
+                  "Hubo un error al enviar el mensaje. Por favor intenta nuevamente."
+                );
+              }
+            )
+            .finally(function () {
+              // Restaurar botón
+              submitButton.value = originalText;
+              submitButton.disabled = false;
+            });
+        }
 
-                  // Mostrar mensaje de error
-                  alert(
-                    "Hubo un error al enviar el mensaje. Por favor intenta nuevamente."
-                  );
-                }
-              )
-              .finally(function () {
-                // Restaurar botón
-                submitButton.value = originalText;
-                submitButton.disabled = false;
-              });
+        // Buscar y configurar el formulario de contacto principal
+        const contactForm = document.getElementById("wf-form-Contact-4-Form");
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            handleFormSubmit(contactForm, e);
+          });
+        }
+
+        // Buscar y configurar el formulario popup/descuento
+        const popupForm = document.getElementById("email-form-2");
+        if (popupForm) {
+          popupForm.addEventListener("submit", function (e) {
+            handleFormSubmit(popupForm, e);
           });
         }
       });
