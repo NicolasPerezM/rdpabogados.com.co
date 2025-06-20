@@ -350,31 +350,49 @@
                   data-name="Email Form 2"
                   method="get"
                   class="form-2"
+                  data-wf-page-id="6759a94b99cecb28eb0c6baf"
+                  data-wf-element-id="d40225ea-78bb-373b-685a-a3e2002311f4"
                 >
-                  <label for="Contact-4-First-Name">Nombre Completo</label>
+                  <!-- Campo de Nombre -->
+                  <label for="Contact-4-First-Name">Nombre</label>
                   <input
                     class="text-field w-input"
                     maxlength="256"
                     name="Contact-4-First-Name"
-                    data-name="Name"
-                    placeholder="Juan Perez"
+                    data-name="Contact 4 First Name"
+                    placeholder="Juan"
                     type="text"
                     id="Contact-4-First-Name"
                     required=""
                   />
 
+                  <!-- Campo de Apellido (NUEVO) -->
+                  <label for="Contact-4-Last-Name">Apellido</label>
+                  <input
+                    class="text-field w-input"
+                    maxlength="256"
+                    name="Contact-4-Last-Name"
+                    data-name="Contact 4 Last Name"
+                    placeholder="Pérez"
+                    type="text"
+                    id="Contact-4-Last-Name"
+                    required=""
+                  />
+
+                  <!-- Campo de Email -->
                   <label for="Contact-4-Email">Correo Electrónico</label>
                   <input
                     class="text-field w-input"
                     maxlength="256"
                     name="Contact-4-Email"
-                    data-name="Email"
+                    data-name="Contact 4 Email"
                     placeholder="juan@ejemplo.com"
                     type="email"
                     id="Contact-4-Email"
                     required=""
                   />
 
+                  <!-- Campo de Mensaje -->
                   <label for="Contact-2-Message-2">Motivo de Interés</label>
                   <textarea
                     required=""
@@ -382,10 +400,11 @@
                     maxlength="5000"
                     id="Contact-2-Message-2"
                     name="Contact-2-Message-2"
-                    data-name="MotivoInterés"
+                    data-name="Contact 2 Message 2"
                     class="text-field w-input"
                   ></textarea>
 
+                  <!-- Botón de envío -->
                   <input
                     type="submit"
                     data-wait="Please wait..."
