@@ -6472,7 +6472,7 @@ figcaption {
   }
 
   .pop-up-grid-2 {
-    height: 85vh;
+    height: 95vh;
     max-height: 75vh;
   }
 
@@ -6602,7 +6602,7 @@ figcaption {
 
   .pop-up-grid-2 {
     justify-content: space-around;
-    height: 85vh;
+    height: 65vh;
     max-height: 65vh;
   }
 
