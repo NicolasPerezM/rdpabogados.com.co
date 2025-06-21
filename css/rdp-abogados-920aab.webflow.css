@@ -1,3 +1,147 @@
+@font-face {
+  font-family: Myriad Pro Semicondensed;
+  src: url('../fonts/Myriad-Pro-Bold-SemiCondensed.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriad Pro Semicondensed;
+  src: url('../fonts/Myriad-Pro-SemiCondensed.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Paperboard;
+  src: url('../fonts/Paperboard.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-Black.otf') format("opentype"), url('../fonts/MyriadPro-BlackSemiExt.otf') format("opentype"), url('../fonts/MyriadPro-BlackCond.otf') format("opentype"), url('../fonts/MyriadPro-BlackSemiCn.otf') format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-BlackCondIt.otf') format("opentype"), url('../fonts/MyriadPro-BlackIt.otf') format("opentype"), url('../fonts/MyriadPro-BlackSemiCnIt.otf') format("opentype"), url('../fonts/MyriadPro-BlackSemiExtIt.otf') format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-Bold.otf') format("opentype"), url('../fonts/MyriadPro-BoldCond.otf') format("opentype"), url('../fonts/MyriadPro-BoldSemiExt.otf') format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-BoldSemiCnIt.otf') format("opentype"), url('../fonts/MyriadPro-BoldCondIt.otf') format("opentype"), url('../fonts/MyriadPro-BoldIt.otf') format("opentype"), url('../fonts/MyriadPro-BoldSemiExtIt.otf') format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro Cond;
+  src: url('../fonts/MyriadPro-Cond.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-LightCondIt.otf') format("opentype"), url('../fonts/MyriadPro-LightIt.otf') format("opentype"), url('../fonts/MyriadPro-LightSemiExtIt.otf') format("opentype"), url('../fonts/MyriadPro-LightSemiCnIt.otf') format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro Condit;
+  src: url('../fonts/MyriadPro-CondIt.otf') format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-Light.otf') format("opentype"), url('../fonts/MyriadPro-LightCond.otf') format("opentype"), url('../fonts/MyriadPro-LightSemiCn.otf') format("opentype"), url('../fonts/MyriadPro-LightSemiExt.otf') format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-Semibold.otf') format("opentype"), url('../fonts/MyriadPro-SemiboldCond.otf') format("opentype"), url('../fonts/MyriadPro-SemiboldSemiCn.otf') format("opentype"), url('../fonts/MyriadPro-SemiboldSemiExt.otf') format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-Regular.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url('../fonts/MyriadPro-SemiboldIt.otf') format("opentype"), url('../fonts/MyriadPro-SemiboldCondIt.otf') format("opentype"), url('../fonts/MyriadPro-SemiboldSemiCnIt.otf') format("opentype"), url('../fonts/MyriadPro-SemiboldSemiExtIt.otf') format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro It;
+  src: url('../fonts/MyriadPro-It.otf') format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro Semicnit;
+  src: url('../fonts/MyriadPro-SemiCnIt.otf') format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro Semiext;
+  src: url('../fonts/MyriadPro-SemiExt.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Myriadpro Semiextit;
+  src: url('../fonts/MyriadPro-SemiExtIt.otf') format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --background-color--background-primary: var(--base-color-brand--white);
   --text-color--text-primary: var(--base-color-brand--darkest);
@@ -635,9 +779,12 @@ figcaption {
 
 .padding-top.padding-medium {
   color: var(--base-color-brand--lightest);
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 2rem 0 0;
+}
+
+.padding-top.padding-medium.is-footer {
+  color: var(--base-color-brand--darkest);
+  padding-top: 0;
 }
 
 .padding-top.padding-xxlarge, .padding-top.padding-small, .padding-top.padding-xsmall, .padding-top.padding-custom1 {
@@ -673,6 +820,11 @@ figcaption {
   padding-left: 0;
   padding-right: 0;
   position: relative;
+}
+
+.padding-vertical.padding-xxlarge.is-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .padding-vertical.padding-custom1, .padding-vertical.padding-xsmall, .padding-vertical.padding-xhuge, .padding-vertical.padding-xlarge, .padding-vertical.padding-custom2, .padding-vertical.padding-xxsmall, .padding-vertical.padding-huge, .padding-vertical.padding-small {
@@ -1363,7 +1515,7 @@ figcaption {
 }
 
 .icon-embed-xsmall {
-  color: var(--base-color-brand--white);
+  color: var(--base-color-brand--darkest);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -2547,7 +2699,7 @@ figcaption {
 }
 
 .footer2_legal-link {
-  color: var(--base-color-brand--white);
+  color: var(--base-color-brand--darkest);
   font-size: .875rem;
   text-decoration: underline;
 }
@@ -2560,13 +2712,13 @@ figcaption {
 .footer2_component {
   z-index: 1;
   background-color: var(--background-color--background-primary);
-  background-image: linear-gradient(0deg, black, var(--base-color-brand--vinoclaro) 30%, white 31%);
   position: relative;
 }
 
 .footer2_legal-list {
   grid-column-gap: 1.5rem;
   grid-row-gap: 0rem;
+  color: var(--base-color-brand--darkest);
   white-space: normal;
   grid-template-rows: auto;
   grid-template-columns: max-content;
@@ -2589,7 +2741,7 @@ figcaption {
 }
 
 .footer2_credit-text {
-  color: var(--base-color-brand--white);
+  color: var(--base-color-brand--darkest);
   font-size: .875rem;
 }
 
@@ -2608,6 +2760,7 @@ figcaption {
 }
 
 .footer2_social-link {
+  color: var(--base-color-brand--darkest);
   align-items: center;
   font-size: 14px;
   text-decoration: none;
@@ -2621,11 +2774,11 @@ figcaption {
 }
 
 .footer2_top-wrapper {
-  grid-column-gap: 8vw;
-  grid-row-gap: 1rem;
+  grid-column-gap: 28px;
+  grid-row-gap: .5rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr .5fr;
-  align-items: start;
+  place-items: start stretch;
 }
 
 .footer2_left-wrapper {
@@ -5482,7 +5635,7 @@ figcaption {
 
 .image-28 {
   width: 100%;
-  height: 50svw;
+  height: 70svh;
 }
 
 .image-29 {
@@ -5709,7 +5862,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   max-width: 420px;
-  height: 85vh;
+  height: 60vh;
   max-height: 85vh;
   padding: 16px 32px;
   display: flex;
@@ -6094,6 +6247,14 @@ figcaption {
   inset: 0% auto auto -25%;
 }
 
+.bold-text-2 {
+  font-size: 3rem;
+}
+
+.heading-5 {
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 1280px) {
   .main-wrapper {
     overflow: hidden;
@@ -6276,7 +6437,7 @@ figcaption {
   }
 
   .image-28 {
-    height: 36svw;
+    height: 75svh;
   }
 
   .image-29 {
@@ -6311,8 +6472,12 @@ figcaption {
   }
 
   .pop-up-grid-2 {
-    height: 75vh;
+    height: 50vh;
     max-height: 75vh;
+  }
+
+  .container-medium-2.is-legal {
+    max-width: 90%;
   }
 
   .image-38 {
@@ -6389,6 +6554,18 @@ figcaption {
 
   .image-63 {
     left: -11%;
+  }
+
+  .bold-text-2 {
+    font-size: 3rem;
+  }
+
+  .tabs-content, .tab-pane-tab-1 {
+    width: 100%;
+  }
+
+  .heading-6 {
+    font-size: 1.5rem;
   }
 }
 
@@ -6893,13 +7070,23 @@ figcaption {
   }
 
   .footer2_top-wrapper {
+    grid-column-gap: 28px;
     grid-row-gap: 4rem;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
   }
 
   .footer2_left-wrapper {
+    grid-column-gap: 2rem;
     grid-row-gap: 3rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    place-items: center;
+    display: grid;
   }
 
   .footer2_social-list {
@@ -6938,6 +7125,11 @@ figcaption {
   .servicios_encabezado_content {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .servicios_lista-de-caracteristicas_card-medium {
+    grid-template-columns: 1fr 1fr;
+    place-items: stretch stretch;
   }
 
   .servicios_lista-de-caracteristicas_card-large-content {
@@ -7237,6 +7429,12 @@ figcaption {
 
   .image-11 {
     right: -42%;
+  }
+
+  .image-24 {
+    text-align: left;
+    width: 100%;
+    margin-left: 0;
   }
 
   .image-27 {
@@ -8589,47 +8787,50 @@ figcaption {
   }
 
   .image-39 {
-    top: 62%;
+    max-width: 70%;
+    top: 65%;
     bottom: -11px;
   }
 
   .image-40 {
-    max-width: 100%;
-    top: -3%;
+    max-width: 70%;
+    top: 1%;
   }
 
   .image-41 {
-    top: 62%;
+    max-width: 70%;
+    top: 65%;
   }
 
   .image-42 {
-    max-width: 100%;
-    top: 60%;
+    max-width: 70%;
+    top: 63%;
   }
 
   .image-43 {
-    top: -1%;
+    max-width: 70%;
+    top: 10%;
   }
 
   .image-44 {
-    max-width: 100%;
-    top: 57%;
+    max-width: 70%;
+    top: 49%;
   }
 
   .image-45 {
-    max-width: 100%;
-    top: -1%;
+    max-width: 70%;
+    top: 10%;
   }
 
   .image-46 {
-    max-width: 100%;
-    top: 57%;
+    max-width: 70%;
+    top: 54%;
   }
 
   .image-47 {
-    max-width: 90%;
+    max-width: 70%;
     position: absolute;
-    inset: 0% auto auto -13%;
+    inset: 8% auto auto -13%;
   }
 
   .image-48 {
@@ -8637,15 +8838,18 @@ figcaption {
   }
 
   .image-49 {
-    top: 63%;
+    max-width: 70%;
+    top: 58%;
   }
 
   .image-50 {
-    top: -1%;
+    max-width: 70%;
+    top: 7%;
   }
 
   .image-51 {
-    top: 63%;
+    max-width: 70%;
+    top: 59%;
   }
 
   .image-54 {
@@ -10224,7 +10428,7 @@ figcaption {
   }
 
   #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4ef9-7f037cab {
-    grid-area: span 1 / span 1 / span 1 / span 1;
+    grid-area: span 1 / span 2 / span 1 / span 2;
   }
 
   #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4f1d-7f037cab {
@@ -10258,7 +10462,7 @@ figcaption {
   }
 
   #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4ef9-7f037cab {
-    grid-area: span 1 / span 1 / span 1 / span 1;
+    grid-area: span 1 / span 2 / span 1 / span 2;
   }
 
   #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4f0b-7f037cab, #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4f1d-7f037cab {
@@ -10271,7 +10475,11 @@ figcaption {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4ed3-7f037cab, #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4f0b-7f037cab, #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4f1d-7f037cab {
+  #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4ed3-7f037cab {
+    grid-area: span 2 / span 2 / span 2 / span 2;
+  }
+
+  #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4f0b-7f037cab, #w-node-b56ac0e6-ab46-3f7f-b6ca-a3810f6c4f1d-7f037cab {
     grid-column: span 1 / span 1;
   }
 }
