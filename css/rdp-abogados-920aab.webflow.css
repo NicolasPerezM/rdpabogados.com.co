@@ -5823,6 +5823,7 @@ figcaption {
   position: fixed;
   inset: 0%;
   overflow: hidden;
+  height: 800px;
 }
 
 .pop-up-grid {
@@ -5901,7 +5902,7 @@ figcaption {
 }
 
 .form-block {
-  height: 100em;
+  height: 100%;
   color: var(--base-color-brand--darkest);
 }
 
