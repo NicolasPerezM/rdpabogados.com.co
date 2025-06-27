@@ -2224,6 +2224,7 @@ figcaption {
 
 .navbar1_link {
   padding: .5rem 1rem;
+  display: inline-block;
 }
 
 .navbar1_link:hover {
@@ -2232,6 +2233,10 @@ figcaption {
 
 .navbar1_link.w--current {
   color: var(--base-color-brand--dorclaro);
+}
+
+.navbar1_link.navbar-blog {
+  display: none;
 }
 
 .navbar1_component {
